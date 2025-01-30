@@ -1,0 +1,167 @@
+
+
+/* Garantir que o body ocupe toda a tela e defina o layout */
+body {
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 3px;
+    background-color: rgb(29, 29, 29);
+    color: white;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    user-select: none;
+}
+
+/* Container principal que vai centralizar o conteúdo */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilo para a imagem */
+.image-container img {
+    width: 110px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    border-radius: 50%;
+    border: 1px solid rgb(0, 0, 0);
+    margin-top: -50px;
+}
+
+/* Centralização do nome embaixo da imagem */
+.nomecentral {
+    text-align: center;
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+/* Nome no canto superior esquerdo */
+.nomeleft {
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    font-size: 20px;
+}
+
+.subtitlename {
+    font-size: 18px;
+    margin-top: -40px;
+}
+
+.svg-container {
+    display: flex;  /* Usa flexbox para alinhar os itens horizontalmente */
+    justify-content: center;  /* Opcional: centraliza os SVGs horizontalmente */
+    gap: 15px;  /* Espaçamento entre os SVGs */
+}
+
+.svg-container img {
+    width: 25px;  /* Defina a largura dos SVGs conforme necessário */
+    height: auto;
+    margin-top: 30px;
+    filter: grayscale(100%) brightness(100%) contrast(100%) invert(100%);
+}
+
+/* Define o tamanho da scrollbar */
+::-webkit-scrollbar {
+    width: 12px;  /* Largura da scrollbar vertical */
+    height: 12px; /* Altura da scrollbar horizontal */
+}
+
+/* Define o estilo da parte da caixa da scrollbar */
+::-webkit-scrollbar-track {
+    background: #181818;  /* Cor do fundo da caixa */
+    border-radius: 10px;   /* Borda arredondada */
+}
+
+/* Define o estilo do polegar da scrollbar (parte que se move) */
+::-webkit-scrollbar-thumb {
+    background: #252525;  /* Cor do polegar */
+    
+    }
+
+/* Define o estilo do polegar quando ele estiver em hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #111111;  /* Cor do polegar quando passa o mouse */
+}
+
+
+
+
+.skills {
+    background-color: #181818;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: absolute;  /* Torna o conteúdo independente do fluxo normal */
+    top: 1430px;            /* Centraliza verticalmente */
+    left: 50%;           /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta a posição para o centro exato */
+    padding: 20px;
+    background-color: #242424;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skills h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.skills-container {
+    display: flex; /* Usando flexbox */
+    flex-wrap: wrap; /* Permitindo que os itens quebrem para a linha seguinte */
+    justify-content: space-between; /* Distribui os itens igualmente */
+}
+
+.skill {
+    width: 22%; /* Ajuste a largura para 4 itens por linha */
+    margin-bottom: 15px;
+}
+
+.skill h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.bar {
+    height: 10px;
+    background-color: #4caf50;
+    border-radius: 5px;
+    transition: width 0.3s ease-in-out;
+}
+
+
+
+.fimpage {
+    position: absolute;
+    top: 1880px;
+    left: 20px;
+    font-size: 20px;
+    color: rgb(29, 29, 29);;
+}
+
+.linha {
+    position: absolute;
+    top: 680px;
+    width: 1px;       /* Largura do quadrado */
+    height: 560px;      /* Altura do quadrado */
+    background-color: #ffffff36;  /* Cor de fundo */
+}
+
+.skillsscroll {
+    user-select: text;
+    position: absolute;
+    right: 20px;
+    top: 3px;
+    font-size: 20px;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
